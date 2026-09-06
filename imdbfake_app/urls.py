@@ -1,8 +1,9 @@
 
 from django.urls import path
-from imdbfake_app.views import movie_list
+from imdbfake_app.views import movie_list, movie_detail
 
 
 urlpatterns=[
-    path('list/', movie_list, name='movie_list'),
+    path('movies/', movie_list, name='movie_list'),
+    path('movies/<int:pk>/', movie_detail, name='movie_detail'),
 ]
