@@ -19,5 +19,5 @@ from django.urls import path , include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('imdbfake_app.api.urls')),
+    path('movies/', include('imdbfake_app.api.urls')),
 ]
